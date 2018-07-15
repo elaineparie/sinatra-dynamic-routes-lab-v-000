@@ -15,12 +15,12 @@ class App < Sinatra::Base
     num.to_s
   end
 
-  get "/say/:number" do
+  get "/say/:number/:phrase" do
     @number = params[:number]
     num = @number.to_i
     array = []
     num.times do
-  array << "show me the money"
+    array << "show me the money"
     end
   end
 
