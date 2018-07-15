@@ -21,7 +21,7 @@ class App < Sinatra::Base
     num = @number.to_i
     array = []
     num.times do
-    array << @phrase
+   @phrase
     end
   end
 
