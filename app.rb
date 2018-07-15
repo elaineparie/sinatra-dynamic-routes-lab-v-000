@@ -20,7 +20,7 @@ class App < Sinatra::Base
     num = @number.to_i
     array = []
     num.times do
-    "show me the money"
+  array <<  "show me the money"
     end
   end
 
