@@ -38,7 +38,8 @@ class App < Sinatra::Base
     @number1 = params[:number1]
     @number2 = params[:number2]
     if @operation.include?(add)
-      @number1.to_i + @number2.to_i
+      number = @number1.to_i + @number2.to_i
+      number.to_s 
       binding.pry
     end
     if @operation.include?(divide)
