@@ -50,8 +50,6 @@ class App < Sinatra::Base
       number.to_s
     end
 
-    end
-
     if @operation == "divide"
       @number1.to_i / @number2.to_i
     end
