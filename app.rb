@@ -11,7 +11,7 @@ class App < Sinatra::Base
   get "/square/:number" do
     @number = params[:number]
   num = @number.to_i
-  num ** 2
+num = num ** 2
   end
 
 
