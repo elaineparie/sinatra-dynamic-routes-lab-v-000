@@ -18,6 +18,7 @@ class App < Sinatra::Base
   get "/say/:number" do
     @number = params[:number]
     num = @number.to_i
+    array = []
     num.times do
     "show me the money"
     end
