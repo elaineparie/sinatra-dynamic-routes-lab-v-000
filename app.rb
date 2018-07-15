@@ -38,16 +38,16 @@ class App < Sinatra::Base
     @number1 = params[:number1]
     @number2 = params[:number2]
 
-    if @operation == "add"
-      number = @number1.to_i + @number2.to_i
-      number.to_s
-    end
     if @operation == "divide"
       number = @number1.to_i / @number2.to_i
       number.to_s
     end
     if @operation == "multiply"
       number = @number1.to_i * @number2.to_i
+      number.to_s
+    end
+    if @operation == "add"
+      number = @number1.to_i + @number2.to_i
       number.to_s
     end
   end
