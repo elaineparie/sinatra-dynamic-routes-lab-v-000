@@ -40,7 +40,7 @@ class App < Sinatra::Base
     num1 = @number1.to_i
     num2 = @number2.to_i
     if @operation.include?(add)
-      @number1 + @number2
+      number1.to_i + @number2.to_i
     end
   #final_num = {@number1 #{@operation} #{@number2}"
   #final_num.to_s
