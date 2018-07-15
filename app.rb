@@ -47,6 +47,9 @@ class App < Sinatra::Base
     elsif @operation == "add"
       number = @number1.to_i + @number2.to_i
       number.to_s
+    elsif @operation == "subtract"
+      number = @number1.to_i - @number2.to_i
+      number.to_s
     end
   end
 
