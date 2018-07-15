@@ -52,7 +52,7 @@ class App < Sinatra::Base
 
     end
 
-    if @operation.include?(multiply)
+    if @operation == "multiply"
       @number1.to_i * @number2.to_i
     end
   end
