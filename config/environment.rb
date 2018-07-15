@@ -5,5 +5,4 @@ Bundler.require(:default, ENV['SINATRA_ENV'])
 
 require './app'
 
-require 'mathn'
 require 'pry'
