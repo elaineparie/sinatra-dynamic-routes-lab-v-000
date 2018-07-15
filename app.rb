@@ -41,9 +41,9 @@ class App < Sinatra::Base
     num2 = @number2.to_i
     if @operation.include?(add)
       @number1 + @number2
-    end 
-  final_num = {@number1 #{@operation} #{@number2}"
-  final_num.to_s
+    end
+  #final_num = {@number1 #{@operation} #{@number2}"
+  #final_num.to_s
   end
 
 end
