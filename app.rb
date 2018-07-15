@@ -40,7 +40,6 @@ class App < Sinatra::Base
     if @operation == "add"
       number = @number1.to_i + @number2.to_i
       number.to_s
-      binding.pry
     end
     if @operation.include?(divide)
     number = @number1.to_i / @number2.to_i
