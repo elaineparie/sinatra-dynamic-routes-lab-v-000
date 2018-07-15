@@ -41,12 +41,10 @@ class App < Sinatra::Base
     if @operation == "divide"
       number = @number1.to_i / @number2.to_i
       number.to_s
-    end
-    if @operation == "multiply"
+    elsif @operation == "multiply"
       number = @number1.to_i * @number2.to_i
       number.to_s
-    end
-    if @operation == "add"
+    elsif @operation == "add"
       number = @number1.to_i + @number2.to_i
       number.to_s
     end
