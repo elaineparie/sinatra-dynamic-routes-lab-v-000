@@ -39,7 +39,7 @@ class App < Sinatra::Base
     @number2 = params[:number2]
     if @operation == "add"
       number = @number1.to_i + @number2.to_i
-      binding.pry
+      number
     end
     if @operation == "divide"
       number = @number1.to_i / @number2.to_i
