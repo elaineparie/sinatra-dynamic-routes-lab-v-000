@@ -53,7 +53,7 @@ class App < Sinatra::Base
     end
 
     if @operation == "divide"
-      @number1.to_i * @number2.to_i
+      @number1.to_i / @number2.to_i
     end
   end
 
