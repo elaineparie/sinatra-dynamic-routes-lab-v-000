@@ -10,9 +10,15 @@ class App < Sinatra::Base
 
   get "/square/:number" do
     @number = params[:number]
-  num = @number.to_i
-num = num ** 2
-num.to_s
+    num = @number.to_i
+    num = num ** 2
+    num.to_s
+  end
+
+  get "/say/:number" do
+    @number = params[:number]
+    num = @number.to_i
+    "show me the money".times(num)
   end
 
 
